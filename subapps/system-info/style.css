@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url("bcc.webp") no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* slight transparency for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #147fb1;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #3071b7;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #1310df;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* #infoDisplay {
+    margin-top: 20px;
+    text-align: left;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+  } */

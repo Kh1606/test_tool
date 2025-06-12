@@ -1,0 +1,103 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('bc.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #logo-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  #logo {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  #controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #004a9a;  /* Blue background */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #003873; 
+    transform: scale(1.05); /* Darker blue on hover */
+  }
+  
+  button:active {
+    background-color: #00408d;  /* Even darker blue when active */
+  }
+  
+  .remove-btn {
+    background-color: #dc3545;  /* Red background */
+    color: #fff;
+    padding: 5px 10px;          /* Smaller padding for a smaller button */
+    font-size: 14px;            /* Smaller font size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c82333;  /* Darker red on hover */
+  }
+  
+  .remove-btn:active {
+    background-color: #bd2130;  /* Even darker red when active */
+  }
+  
+  
+  #file-list, #results {
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #files {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #files li {
+    background: #e0e0e0;
+    margin: 5px 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  textarea {
+    width: 95%;
+    height: 200px;
+    font-family: monospace;
+    padding: 10px;
+  }
+  

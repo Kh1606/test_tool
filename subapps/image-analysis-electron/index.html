@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Analysis Tool</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Main container wrapping all content -->
+  <div class="main-container">
+    
+    <!-- Logo Section: displays your logo image -->
+    <div id="logo">
+      <img src="kaic.png" alt="Logo">
+    </div>
+    
+    <!-- Controls Section -->
+    <div id="controls">
+      <!-- Folder Input Group: input with button inside -->
+      <div class="input-group folder-input mb-3">
+        <span class="input-group-text" id="inputFolderLabel">Input Folder</span>
+        <input type="file" class="form-control" id="folderInput" webkitdirectory directory multiple aria-label="Input Folder" aria-describedby="browseInput">
+      </div>
+      
+      <!-- Number of Bins Input Group: same styling as folder input -->
+      <div class="input-group bins-input mb-3">
+        <span class="input-group-text" id="inputBinsLabel">Number of Bins</span>
+        <input type="number" class="form-control" id="bins" min="1" value="3" placeholder="Enter number of bins" aria-label="Number of Bins" aria-describedby="inputBinsLabel">
+      </div>
+      
+      <!-- Analyze Button Control Group -->
+      <div class="control-group">
+        <button id="analyzeBtn" class="btn-analyze">Analyze</button>
+      </div>
+    </div>
+    
+    <!-- Output Area -->
+    <div id="outputArea">
+      <textarea id="outputText" readonly></textarea>
+    </div>
+    
+    <!-- Chart Container -->
+    <div id="chartContainer">
+      <div class="chartWrapper">
+        <canvas id="barChartCanvas"></canvas>
+      </div>
+      <div class="chartWrapper">
+        <canvas id="pieChartCanvas"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- External scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

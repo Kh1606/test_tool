@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hash Maker (File/Folder)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Logo container -->
+  <div id="logo-container">
+    <img src="logo.png" alt="Logo" id="logo">
+  </div>
+
+  <h1>Hash Maker</h1>
+  <div id="controls">
+    <input type="file" id="fileInput" multiple style="display:none;">
+    <input type="file" id="folderInput" multiple webkitdirectory directory style="display:none;">
+    <button id="btn-select-files">Select File(s)</button>
+    <button id="btn-select-folder">Select Folder</button>
+    <button id="btn-calculate">Calculate Hash</button>
+    <button id="btn-save">Save Results</button>
+  </div>
+  <div id="file-list">
+    <h3>Selected Files/Folders:</h3>
+    <ul id="files"></ul>
+  </div>
+  <div id="results">
+    <h2>Results:</h2>
+    <textarea id="result-text" readonly></textarea>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

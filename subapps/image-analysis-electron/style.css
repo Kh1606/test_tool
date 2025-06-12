@@ -1,0 +1,180 @@
+/* ----------------------------- */
+/* Base Page & Background Styles */
+/* ----------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('bc.webp') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* ----------------------------- */
+/* Main Container Styles         */
+/* ----------------------------- */
+.main-container {
+  max-width: 1000px;
+  margin: 15px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* ----------------------------- */
+/* Logo Section                  */
+/* ----------------------------- */
+#logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#logo img {
+  max-width: 200px;
+}
+
+/* ----------------------------- */
+/* Controls Section              */
+/* ----------------------------- */
+#controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Control groups for non-input-group elements */
+.control-group {
+  margin-bottom: 15px;
+}
+
+#controls label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* ----------------------------- */
+/* Input Group Styles            */
+/* ----------------------------- */
+.input-group {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Limit the width and center the input groups */
+.folder-input,
+.bins-input {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+/* The span before the input field */
+.input-group-text {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+/* The input field style */
+.form-control {
+  flex: 1 1 auto;
+  border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem;
+}
+
+/* Remove left border radius for the button in an input group */
+.input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* ----------------------------- */
+/* Button Styles                 */
+/* ----------------------------- */
+#controls button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* .btn-outline-secondary: Browse button styling */
+.btn-outline-secondary {
+  color: #000 !important;
+  background-color: #b3d7ff !important;
+  border-color: #b3d7ff !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #b3d7ff !important;
+  color: #000 !important;
+}
+
+/* Custom Analyze button styling */
+.btn-analyze {
+  margin: 10px auto; /* Centers the button horizontally with a top margin */
+  padding: 30px 40px; /* Increased padding makes the button larger */
+  font-size: 20px;    /* Larger text size */
+  background-color: #2dabf4;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+ 
+}
+
+
+.btn-analyze:hover {
+  background-color: #206aff;
+}
+
+/* ----------------------------- */
+/* Output Area Styles            */
+/* ----------------------------- */
+#outputArea {
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#outputArea textarea {
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  resize: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #333;
+}
+
+/* ----------------------------- */
+/* Chart Container Styles        */
+/* ----------------------------- */
+#chartContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.chartWrapper {
+  flex: 1;
+  height: 500px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.chartWrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

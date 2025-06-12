@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" class="logo" alt="Logo">
+    <h2>System Information</h2>
+    
+    <input type="text" id="company" placeholder="Company Name">
+    <input type="text" id="testPeriod" placeholder="Test Period">
+    <input type="text" id="examinee" placeholder="Tester Name">
+    
+    <button id="infoButton">Get System Info</button>
+    
+    <div id="loadingSpinner"></div>
+    <div id="infoDisplay"></div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

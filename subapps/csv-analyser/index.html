@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSV Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>CSV Analyzer</h1>
+    <button id="analyzeBtn">Select File and Analyze</button>
+    <input type="file" id="fileInput" accept=".csv" style="display:none;">
+    <progress id="progressBar" value="0" max="100" style="display:none;"></progress>
+    <pre id="output"></pre>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

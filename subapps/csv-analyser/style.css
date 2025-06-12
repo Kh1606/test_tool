@@ -1,0 +1,47 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: url('csv_bc.webp') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.85); /* semi-transparent for readability */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  pre {
+    text-align: left;
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
